@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="hero-section">
     <h1>Home Page</h1>
-  </div>
+  </section>
 </template>

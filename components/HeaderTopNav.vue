@@ -33,5 +33,10 @@ const HeaderTopNav = [
     align-items: center;
     gap: 30px;
   }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 </style>

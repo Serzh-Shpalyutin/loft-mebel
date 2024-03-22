@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/Roboto-Medium.woff2') format('woff2');
+  src: url('/fonts/RobotoMedium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/Roboto-Bold.woff2') format('woff2');
+  src: url('/fonts/RobotoBold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@ html {
 
 html,
 body {
-  color: #fff;
+  color: #000;
   margin: 0;
   padding: 0;
 }
