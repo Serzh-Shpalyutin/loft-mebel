@@ -1,5 +1,5 @@
+
+import { PageHomeSlider } from '#build/components';
 <template>
-  <section class="hero-section">
-    <h1>Home Page</h1>
-  </section>
+  <PageHomeSlider />
 </template>
