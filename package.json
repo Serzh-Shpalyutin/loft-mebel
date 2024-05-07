@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.7.0",
     "nuxt": "^3.11.1",
     "nuxt-swiper": "^1.2.2",
     "sass": "^1.72.0",

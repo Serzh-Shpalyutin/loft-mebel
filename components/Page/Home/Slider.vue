@@ -1,19 +1,21 @@
 <script setup>
-import banner1 from 'assets/img/content/slider/banner1.jpg'
-import banner2 from 'assets/img/content/slider/banner2.jpg'
-import banner3 from 'assets/img/content/slider/banner3.jpg'
-
 const sliders = [
   {
-    link: banner1,
+    link: 'img/content/slider/banner1.jpg',
   },
   {
-    link: banner2,
+    link: 'img/content/slider/banner2.jpg',
   },
   {
-    link: banner3,
+    link: 'img/content/slider/banner3.jpg',
   },
 ]
+
+const sliderInfo = {
+  title: `loft <br> мебель`,
+  text: 'Современная и удобная мебель в Анапе',
+  textBtn: 'СМОТРЕТЬ КАТАЛОГ'
+}
 </script>
 
 <template>
@@ -28,9 +30,9 @@ const sliders = [
             :style="{ backgroundImage: `url(${slide.link})` }"></SwiperSlide>
         </Swiper>
 
-        <h1 class="home-slider__title">loft<br>мебель</h1>
-        <h2 class="home-slider__subtitle">Современная и удобная мебель в Анапе</h2>
-        <NuxtLink to="/catalog" class="home-slider__btn">СМОТРЕТЬ КАТАЛОГ</NuxtLink>
+        <h1 v-html="sliderInfo.title" class="home-slider__title"></h1>
+        <h2 class="home-slider__subtitle">{{ sliderInfo.text }}</h2>
+        <NuxtLink to="/catalog" class="home-slider__btn">{{ sliderInfo.textBtn }}</NuxtLink>
       </div>
     </div>
   </section>
@@ -38,8 +40,8 @@ const sliders = [
 
 <style lang="scss" scoped>
 .home-slider {
-  margin-top: 30px;
   height: 450px;
+  
   &__content {
     position: relative;
     padding-top: 100px;

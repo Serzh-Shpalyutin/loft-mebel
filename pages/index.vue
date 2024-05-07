@@ -1,5 +1,4 @@
-
-import { PageHomeSlider } from '#build/components';
 <template>
   <PageHomeSlider />
+  <PageHomeBestSellers />
 </template>

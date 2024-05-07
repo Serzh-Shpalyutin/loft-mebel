@@ -2,5 +2,5 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
-  modules: ['nuxt-swiper']
+  modules: ['nuxt-swiper', "@nuxt/image"]
 })
